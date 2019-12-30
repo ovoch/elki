@@ -19,7 +19,20 @@ place:
   <option>gomel</option>
   <option>grodno</option>
 </select>
+<template id="template">
 
-<p><em>Thank you for using nginx.</em></p>
+</template>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
+	<script>
+  var template = document.getElementById('template').innerHTML;
+	var renderCity = Handlebars.compile(template);
+	var city = [
+
+    {
+
+
+    }
+  ]
+</script>
 </body>
 </html>
