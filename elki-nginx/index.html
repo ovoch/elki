@@ -19,22 +19,22 @@ place:
   <option>gomel</option>
   <option>grodno</option>
 </select>
+
 <!--#include virtual="/app/height"-->
+<!--#include virtual="/app/price"-->
+<!--#include virtual="/app/cities"-->
 <template id="template">
 {{#each info}}
+price :
+country :
 {{/each}}
 </template>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
 	<script>
   var template = document.getElementById('template').innerHTML;
-	var renderCity = Handlebars.compile(template);
-	var city = [
-
-    {
-
-
-    }
+	var renderELki = Handlebars.compile(template);
   ]
+  	document.getElementById('city').innerHTML = render({price:"THE BEST PRICE" });
 </script>
 </body>
 </html>

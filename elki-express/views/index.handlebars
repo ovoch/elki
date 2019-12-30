@@ -1,24 +1,18 @@
-const express = require('express');
-const router = express.Router();
-const faker = require('faker');
-/* GET users listing. */
-router.get('/height', (req, res) => {
-  var compositions = [         
-    { 
-    	"height"faker.random.number({min:100, max:200});
-    	
-    },
-    { 
-    	"height"faker.random.number({min:100, max:200});
-    },
-    { 
-       "height"faker.random.number({min:100, max:200});
-    },
-    { 
-    	"height"faker.random.number({min:100, max:200});
-    }];
-   
-  res.render('index', { title: 'Express' });
-});
+  
+<select>
+{{#each height}}
+<option> {{height}} </option>
+{{/each}}
+</select>
 
-module.exports = router;
+<select>
+{{#each cities}}
+<option> {{name}} </option>
+{{/each}}
+</select>
+
+<select>
+{{#each price}}
+<option> {{price}} </option>
+{{/each}}
+</select>
